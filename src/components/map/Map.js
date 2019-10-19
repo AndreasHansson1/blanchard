@@ -57,8 +57,8 @@ const Map = () => {
       <Img
         id='map'
         fluid={data.file.childImageSharp.fluid}
-        alt='Google Map'
-        title='Map'
+        alt='Google Map Champoluc Apartment Location'
+        title='Map Champoluc'
       />
       <Button
         type='button'

@@ -10,14 +10,14 @@ const Text = styled.div`
 
 const TextTwo = () => (
   <Text>
-    <h2>Beautiful view</h2>
+    <h2>Just outside Champoluc</h2>
     <p>
       The apartment has a large wooden patio with a beautiful view of the
       valley. The apartment is situated approx 1 km from the Frachey lift
-      station and approx 3km from Champoluc village. Within walking distance you
-      will find the ski bus, lots of hiking trails and the famous
-      {' '}
-      <a href="https://www.tripadvisor.se/Restaurant_Review-g1028607-d2331201-Reviews-Fior_di_Roccia-Ayas_Valle_d_Aosta.html">
+      station and approx 3km from <strong>Champoluc</strong> village. Within
+      walking distance you will find the ski bus, lots of hiking trails and the
+      famous{' '}
+      <a href='https://www.tripadvisor.se/Restaurant_Review-g1028607-d2331201-Reviews-Fior_di_Roccia-Ayas_Valle_d_Aosta.html'>
         Fior Di Roccia
       </a>
       , creperia. Parking is included for 1 car. Bedroom nr 1 has a double bed,
