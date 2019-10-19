@@ -5,13 +5,17 @@ import PropTypes from 'prop-types';
 const CardImage = ({ image }) => {
   const Image = styled.div`
     height: 100%;
+
+    img {
+      filter: sepia(0.2);
+    }
   `;
 
   return <Image>{image}</Image>;
 };
 
 CardImage.propTypes = {
-  image: PropTypes.node.isRequired,
+  image: PropTypes.node.isRequired
 };
 
 export default CardImage;

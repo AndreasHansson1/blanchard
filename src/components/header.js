@@ -19,7 +19,7 @@ const Header = ({ children }) => {
   `);
   const context = useThemeUI();
   const {
-    theme: { breakpoints },
+    theme: { breakpoints }
   } = context;
 
   const StyledHeader = styled.header`
@@ -53,6 +53,12 @@ const Header = ({ children }) => {
     padding: 0;
     text-align: center;
 
+    a {
+      color: white;
+      text-decoration: none;
+      background-color: transparent;
+    }
+
     @media only screen and (min-width: ${breakpoints[1]}) {
       float: left;
       margin: 0;
@@ -60,29 +66,20 @@ const Header = ({ children }) => {
   `;
   const imageData = [
     'linear-gradient(rgba(25,25,112, 0.3), rgba(25,25,112, 0.1))',
-    data.file.childImageSharp.fluid,
+    data.file.childImageSharp.fluid
   ];
 
   return (
     <BackgroundImage
       fluid={imageData}
-      backgroundColor="transparent"
-      alt="Mountains"
+      backgroundColor='transparent'
+      alt='Mountains'
     >
       <StyledHeader>
         <Wrapper>
           <Div>
             <H1>
-              <Link
-                to="/"
-                style={{
-                  color: 'white',
-                  backgroundColor: 'transparent',
-                  textDecoration: 'none',
-                }}
-              >
-                Blanchard
-              </Link>
+              <Link to='/'>Blanchard</Link>
             </H1>
             {children}
           </Div>
@@ -93,7 +90,7 @@ const Header = ({ children }) => {
 };
 
 Header.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 };
 
 export default Header;

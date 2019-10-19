@@ -18,12 +18,9 @@ import Booking from '../components/Booking';
 
 const IndexPage = ({ data }) => {
   const cardArr = [];
-  data.cardQuery.edges.map(image => cardArr.push(
-    <Img
-      fluid={image.node.childImageSharp.fluid}
-      style={{ filter: 'sepia(0.2)' }}
-    />,
-  ));
+  data.cardQuery.edges.map(image =>
+    cardArr.push(<Img fluid={image.node.childImageSharp.fluid} />)
+  );
 
   const HeroContainer = styled.div`
     width: 100%;
@@ -33,7 +30,7 @@ const IndexPage = ({ data }) => {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
-        <SEO title="Home" />
+        <SEO title='Home' />
         <HeroContainer>
           <HeroImage />
         </HeroContainer>
@@ -57,7 +54,7 @@ const IndexPage = ({ data }) => {
 };
 
 IndexPage.propTypes = {
-  data: PropTypes.objectOf(PropTypes.object).isRequired,
+  data: PropTypes.objectOf(PropTypes.object).isRequired
 };
 
 export default IndexPage;

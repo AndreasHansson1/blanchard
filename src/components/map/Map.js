@@ -7,7 +7,7 @@ import { useThemeUI } from 'theme-ui';
 const Map = () => {
   const context = useThemeUI();
   const {
-    theme: { borderRadius, boxshadow },
+    theme: { borderRadius, boxshadow }
   } = context;
   const data = useStaticQuery(graphql`
     query {
@@ -20,6 +20,18 @@ const Map = () => {
       }
     }
   `);
+
+  const A = styled.a`
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      min-height: 15rem;
+      max-height: 30rem;
+      filter: sepia(0);
+    }
+  `;
 
   const Button = styled.button`
     position: absolute;
@@ -40,31 +52,21 @@ const Map = () => {
     }
   `;
   return (
-    <a
-      style={{ position: 'relative' }}
-      href="https://www.google.com/maps/d/u/0/viewer?mid=1rbx0n65ngD1IssLAUlAVDPRH2ouzz8lG&ll=45.86561089999999%2C7.7292956&z=17"
-    >
+    <A href='https://www.google.com/maps/d/u/0/viewer?mid=1rbx0n65ngD1IssLAUlAVDPRH2ouzz8lG&ll=45.86561089999999%2C7.7292956&z=17'>
       {/* <Overlay /> */}
       <Img
-        id="map"
+        id='map'
         fluid={data.file.childImageSharp.fluid}
-        alt="Google Map"
-        title="Map"
-        style={{
-          width: '100%',
-          height: '100%',
-          minHeight: '15rem',
-          maxHeight: '30rem',
-          filter: 'sepia(0)',
-        }}
+        alt='Google Map'
+        title='Map'
       />
       <Button
-        type="button"
+        type='button'
         onclick="location.href='https://www.google.com/maps/d/u/0/viewer?mid=1rbx0n65ngD1IssLAUlAVDPRH2ouzz8lG&ll=45.86561089999999%2C7.7292956&z=17'"
       >
         Go to map
       </Button>
-    </a>
+    </A>
   );
 };
 

@@ -6,7 +6,7 @@ import Form from './Form';
 const Booking = () => {
   const context = useThemeUI();
   const {
-    theme: { breakpoints },
+    theme: { breakpoints }
   } = context;
 
   const Div = styled.div`
@@ -14,6 +14,9 @@ const Booking = () => {
     line-height: 1.7;
     max-width: 35rem;
     margin: auto;
+    h2 {
+      padding-top: 0;
+    }
   `;
   const FormWrapper = styled.div`
     padding: 0;
@@ -30,16 +33,14 @@ const Booking = () => {
   return (
     <>
       <Div>
-        <h2 style={{ paddingTop: 0 }}>Booking</h2>
+        <h2>Booking</h2>
         <p>
           To make an inquiry, please fill out the form below with your preferred
           travel dates. We will do our best to respond within 1 day. Rates
           approx 100€/ night. During peak season (week 51, 52, 1, 2, 7, 8, 9,
           32, 33, 34) the rates are higher. Cleaning is included. Minimum rental
-          length is 4 nights. Or you can send an inquiry to
-          {' '}
-          <a href="mailto:info.blanchard@mail.com">info.blanchard@mail.com</a>
-          {' '}
+          length is 4 nights. Or you can send an inquiry to{' '}
+          <a href='mailto:info.blanchard@mail.com'>info.blanchard@mail.com</a>{' '}
         </p>
       </Div>
       <FormWrapper>

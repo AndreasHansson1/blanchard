@@ -5,7 +5,7 @@ import { useThemeUI } from 'theme-ui';
 const Form = () => {
   const context = useThemeUI();
   const {
-    theme: { borderRadius, boxshadow },
+    theme: { borderRadius, boxshadow }
   } = context;
 
   const StyledForm = styled.form`
@@ -14,12 +14,22 @@ const Form = () => {
     background: #f8f8ff;
     padding: 2rem;
   `;
+
   const Input = styled.input`
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
     font-size: 14px;
   `;
+
+  const HiddenInput = styled.input`
+    display: none;
+  `;
+
+  const Label = styled.label`
+    width: 100%;
+  `;
+
   const Textarea = styled.textarea`
     width: 100%;
     height: auto;
@@ -42,29 +52,29 @@ const Form = () => {
 
   return (
     <StyledForm
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      action="https://formspree.io/info.blanchard@mail.com"
+      name='contact'
+      method='POST'
+      data-netlify='true'
+      action='https://formspree.io/info.blanchard@mail.com'
     >
-      <label htmlFor="name" style={{ width: '100%' }}>
+      <Label htmlFor='name'>
         Your Name:
-        <Input type="text" name="name" id="name" />
-      </label>
+        <Input type='text' name='name' id='name' />
+      </Label>
 
-      <label htmlFor="email" style={{ width: '100%' }}>
+      <Label htmlFor='email'>
         Your Email:
-        <Input type="email" name="_replyto" id="email" />
-      </label>
+        <Input type='email' name='_replyto' id='email' />
+      </Label>
 
-      <label htmlFor="message">
+      <Label htmlFor='message'>
         Message:
-        <Textarea name="message" rows="10" cols="100" id="message" />
-      </label>
+        <Textarea name='message' rows='10' cols='100' id='message' />
+      </Label>
 
-      <input type="text" name="_gotcha" style={{ display: 'none' }} />
+      <HiddenInput type='text' name='_gotcha' />
 
-      <Button type="submit">Send</Button>
+      <Button type='submit'>Send</Button>
     </StyledForm>
   );
 };
