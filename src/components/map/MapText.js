@@ -25,7 +25,10 @@ const MapText = () => {
         drive. Milano’s airports (Linate, Malpensa) and Bergamo is a 2 - 2,5
         hour drive. The house is approx 3 km from <strong>Champoluc</strong>{' '}
         village and 1 km from the Frachey lift station, that takes you to the{' '}
-        <a href='https://www.visitmonterosa.com/en/monterosa-ski/'>
+        <a
+          title='Visit Moterosa'
+          href='https://www.visitmonterosa.com/en/monterosa-ski/'
+        >
           Monterosa Ski System.
         </a>{' '}
         It is a huge system that connects Alagna, Gressoney and Champoluc. You

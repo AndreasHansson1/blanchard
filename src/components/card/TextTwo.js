@@ -17,7 +17,10 @@ const TextTwo = () => (
       station and approx 3km from <strong>Champoluc</strong> village. Within
       walking distance you will find the ski bus, lots of hiking trails and the
       famous{' '}
-      <a href='https://www.tripadvisor.se/Restaurant_Review-g1028607-d2331201-Reviews-Fior_di_Roccia-Ayas_Valle_d_Aosta.html'>
+      <a
+        title='Fior Di Roccia'
+        href='https://www.tripadvisor.se/Restaurant_Review-g1028607-d2331201-Reviews-Fior_di_Roccia-Ayas_Valle_d_Aosta.html'
+      >
         Fior Di Roccia
       </a>
       , creperia. Parking is included for 1 car. Bedroom nr 1 has a double bed,

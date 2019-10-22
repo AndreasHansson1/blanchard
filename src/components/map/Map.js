@@ -52,7 +52,10 @@ const Map = () => {
     }
   `;
   return (
-    <A href='https://www.google.com/maps/d/u/0/viewer?mid=1rbx0n65ngD1IssLAUlAVDPRH2ouzz8lG&ll=45.86561089999999%2C7.7292956&z=17'>
+    <A
+      title='Google Map'
+      href='https://www.google.com/maps/d/u/0/viewer?mid=1rbx0n65ngD1IssLAUlAVDPRH2ouzz8lG&ll=45.86561089999999%2C7.7292956&z=17'
+    >
       {/* <Overlay /> */}
       <Img
         id='map'

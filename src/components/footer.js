@@ -40,7 +40,9 @@ const Footer = () => {
       <Div>
         <h2>Blanchard</h2>
         <span>Copyright &copy; 2019, A. Hansson</span>
-        <a href='mailto:info.blanchard@mail.com'>info.blanchard@mail.com</a>
+        <a title='Email' href='mailto:info.blanchard@mail.com'>
+          info.blanchard@mail.com
+        </a>
       </Div>
     </StyledFooter>
   );
