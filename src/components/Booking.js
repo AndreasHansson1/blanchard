@@ -41,7 +41,7 @@ const Booking = () => {
           32, 33, 34) the rates are higher. Cleaning is included. Minimum rental
           length is 4 nights. Or you can send an inquiry to{' '}
           <a title='Email' href='mailto:info.blanchard@mail.com'>
-            info.blanchard@mail.com
+            info.blanchard[at]mail.com
           </a>{' '}
         </p>
       </Div>
