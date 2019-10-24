@@ -76,6 +76,10 @@ function SEO({ description, image, lang, meta, title }) {
         {
           name: 'apple-mobile-web-app-capable',
           content: 'yes'
+        },
+        {
+          name: 'keywords',
+          content: 'champoluc, apartment, house, for rent, italian alps'
         }
       ].concat(meta)}
     >
