@@ -4,6 +4,7 @@ export default {
     background: '#fff',
     primary: 'rgba(68, 114, 175, 1)',
     secondary: 'rgba(68, 114, 175, .8)',
+    lightGrey: '#f8f8f8'
   },
   boxshadow: 'box-shadow: 2px 2px 12px 0 rgba(0, 0, 80, 0.15)',
   borderRadius: 'border-radius: 5px',
@@ -24,9 +25,9 @@ export default {
     a: {
       color: 'primary',
       ':hover, :focus': {
-        color: 'secondary',
-      },
-    },
+        color: 'secondary'
+      }
+    }
     // more styles can be added as needed
-  },
+  }
 };

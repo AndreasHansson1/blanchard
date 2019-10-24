@@ -4,13 +4,14 @@ import styled from '@emotion/styled';
 import { useThemeUI } from 'theme-ui';
 import WordChange from './WordChange';
 import Header from './header';
+import PreFooter from './PreFooter';
 import Footer from './footer';
 import './layout.css';
 
 const Layout = ({ children }) => {
   const context = useThemeUI();
   const {
-    theme: { breakpoints },
+    theme: { breakpoints }
   } = context;
 
   const Main = styled.div`
@@ -39,13 +40,14 @@ const Layout = ({ children }) => {
         <WordChange />
       </Header>
       <Main>{children}</Main>
+      <PreFooter />
       <Footer />
     </>
   );
 };
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired
 };
 
 export default Layout;
