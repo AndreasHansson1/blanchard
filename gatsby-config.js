@@ -1,10 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Spacious Champoluc apartment for rent | Italy',
-    description:
-      'Lovley 3 bedroom apartment for rent in Champoluc in the Italian alps.',
+    title: 'Spacious apartment for rent in the Italian alps.',
+    description: 'Lovley 3 bedroom apartment for rent just outside Champoluc.',
     author: 'Andreas',
-    siteUrl: 'https://blanchard.netlify.com/',
+    siteUrl: 'https://blanchard.netlify.com/'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -17,15 +16,15 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/images`
+      }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'gallery-items',
-        path: `${__dirname}/src/images/gallery-items`,
-      },
+        path: `${__dirname}/src/images/gallery-items`
+      }
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
@@ -38,8 +37,8 @@ module.exports = {
         background_color: '#fff',
         theme_color: '#fff',
         display: 'standalone',
-        icon: 'src/images/icon.png', // This path is relative to the root of the site.
-      },
+        icon: 'src/images/icon.png' // This path is relative to the root of the site.
+      }
     },
     'gatsby-transformer-sharp',
     {
@@ -51,17 +50,17 @@ module.exports = {
             options: {
               maxWidth: 750,
               quality: 90,
-              linkImagesToOriginal: true,
-            },
-          },
-        ],
-      },
+              linkImagesToOriginal: true
+            }
+          }
+        ]
+      }
     },
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: 'UA-145768757-1',
-      },
-    },
-  ],
+        trackingId: 'UA-145768757-1'
+      }
+    }
+  ]
 };
