@@ -48,7 +48,7 @@ const Footer = () => {
           <a title='Visit Monterosa' href='https://www.visitmonterosa.com/'>
             Visit Monterosa
           </a>
-          <small> (Information of the Monte Rosa)</small>
+          <small> (Info about Monte Rosa)</small>
         </div>
         <div>
           <a title='Valle D Aosta' href='http://www.lovevda.it/en/'>
