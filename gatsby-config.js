@@ -4,7 +4,8 @@ module.exports = {
     description:
       'Lovley 3 bedroom apartment for rent just outside Champoluc in the village of Blanchard. From here it is only 800 meters to the Frachey lift station.',
     author: 'Andreas',
-    siteUrl: 'https://blanchard.netlify.com/'
+    siteUrl: 'https://blanchard.netlify.com/',
+    image: '/images/terrace-outside.jpg'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
