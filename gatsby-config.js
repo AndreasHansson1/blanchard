@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Spacious apartment for rent in the Italian alps.',
     description:
-      'Lovley 3 bedroom apartment for rent just outside Champoluc in the village of Blanchard. From here it is only 800 meters to the Frachey lift station.',
+      'Lovley 3 bedroom apartment for rent just outside Champoluc in the village of Blanchard. From here it is only 1 km to the Frachey lift station.',
     author: 'Andreas',
     siteUrl: 'https://blanchard.netlify.com/',
     image: '/images/terrace-outside.jpg'

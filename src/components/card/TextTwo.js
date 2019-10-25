@@ -10,7 +10,7 @@ const Text = styled.div`
 
 const TextTwo = () => (
   <Text>
-    <h2>Just outside Champoluc</h2>
+    <h2>Beautiful view</h2>
     <p>
       The apartment has a large wooden patio with a beautiful view of the
       valley. The apartment is situated approx 1 km from the Frachey lift

@@ -11,7 +11,7 @@ const WordChange = () => {
     min-width: 10rem;
   `;
 
-  const words = ['välkommen', 'welcome', 'benvenuto'];
+  const words = ['välkommen!', 'welcome!', 'benvenuto!'];
   // eslint-disable-next-line prefer-const
   let [counter, setCounter] = useState(0);
 

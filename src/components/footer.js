@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import { useThemeUI } from 'theme-ui';
 import styled from '@emotion/styled';
 
@@ -26,6 +27,15 @@ const Footer = () => {
       color: #fff;
     }
 
+    a {
+      color: #fff;
+      font-weight: 300;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
     span {
       color: white;
       display: block;
@@ -38,7 +48,11 @@ const Footer = () => {
   return (
     <StyledFooter>
       <Div>
-        <h2>Blanchard</h2>
+        <h2>
+          <Link to='/#'>
+            <strong>B</strong>lanchard
+          </Link>
+        </h2>
         <span>Copyright &copy; 2019, A. Hansson</span>
         <a title='Email' href='mailto:info.blanchard@mail.com'>
           info.blanchard[at]mail.com

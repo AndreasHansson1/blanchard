@@ -19,7 +19,7 @@ const MapText = () => {
 
   return (
     <Text>
-      <h2>Get to the Apartment</h2>
+      <h2>Get there</h2>
       <p>
         If you are flying in, Torino is the closest airport around 1,5 hour
         drive. Milano’s airports (Linate, Malpensa) and Bergamo is a 2 - 2,5

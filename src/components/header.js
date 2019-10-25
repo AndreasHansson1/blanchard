@@ -29,6 +29,10 @@ const Header = ({ children }) => {
     padding: 0;
     display: flex;
     align-items: flex-end;
+
+    strong {
+      font-weight: 700;
+    }
   `;
 
   const Wrapper = styled.div`
@@ -41,9 +45,22 @@ const Header = ({ children }) => {
       padding: 0 0 1rem 1rem;
     }
   `;
-  const H1 = styled.h1`
+
+  const Span = styled.span`
+    font-size: 3.375rem;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+      Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     padding: 0;
     margin: 0;
+    color: #fff;
+  `;
+
+  const H1 = styled.h1`
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2px;
     color: #fff;
   `;
 
@@ -54,9 +71,10 @@ const Header = ({ children }) => {
     text-align: center;
 
     a {
-      color: white;
+      color: #fff;
       text-decoration: none;
       background-color: transparent;
+      font-weight: 300;
     }
 
     @media only screen and (min-width: ${breakpoints[1]}) {
@@ -78,9 +96,12 @@ const Header = ({ children }) => {
       <StyledHeader>
         <Wrapper>
           <Div>
-            <H1>
-              <Link to='/'>Blanchard</Link>
-            </H1>
+            <Span>
+              <Link to='/#'>
+                <strong>B</strong>lanchard
+              </Link>
+            </Span>
+            <H1>-champoluc apartment for rent-</H1>
             {children}
           </Div>
         </Wrapper>
