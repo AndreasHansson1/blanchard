@@ -22,6 +22,9 @@ const Footer = () => {
     padding: 1rem 1rem;
 
     h2 {
+      font-family: simplifica;
+      font-weight: 700;
+      letter-spacing: 5px;
       padding: 0;
       margin: 0;
       color: #fff;
@@ -29,11 +32,6 @@ const Footer = () => {
 
     a {
       color: #fff;
-      font-weight: 300;
-    }
-
-    strong {
-      font-weight: 700;
     }
 
     span {
@@ -49,9 +47,7 @@ const Footer = () => {
     <StyledFooter>
       <Div>
         <h2>
-          <Link to='/#'>
-            <strong>B</strong>lanchard
-          </Link>
+          <Link to='/#'>Blanchard</Link>
         </h2>
         <span>Copyright &copy; 2019, A. Hansson</span>
         <a title='Email' href='mailto:info.blanchard@mail.com'>
