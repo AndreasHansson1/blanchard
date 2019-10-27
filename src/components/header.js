@@ -1,9 +1,12 @@
+/** @jsx jsx */
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
+import { jsx } from '@emotion/core';
 import styled from '@emotion/styled';
 import { useThemeUI } from 'theme-ui';
 import BackgroundImage from 'gatsby-background-image';
+import Logo from './Logo';
 
 const Header = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -42,16 +45,6 @@ const Header = ({ children }) => {
     }
   `;
 
-  const Span = styled.span`
-    font-size: 3.375rem;
-    font-family: simplifica;
-    letter-spacing: 10px;
-    padding: 0;
-    margin: 0;
-    margin-left: 16px;
-    color: #fff;
-  `;
-
   const H1 = styled.h1`
     font-size: 1rem;
     font-weight: 300;
@@ -71,7 +64,8 @@ const Header = ({ children }) => {
       color: #fff;
       text-decoration: none;
       background-color: transparent;
-      font-weight: 700;
+      font-weight: 300;
+      letter-spacing: 1px;
     }
 
     @media only screen and (min-width: ${breakpoints[1]}) {
@@ -93,9 +87,9 @@ const Header = ({ children }) => {
       <StyledHeader>
         <Wrapper>
           <Div>
-            <Span>
-              <Link to='/#'>Blanchard</Link>
-            </Span>
+            <Link to='/#'>
+              <Logo />
+            </Link>
             <H1>-champoluc apartment for rent-</H1>
             {children}
           </Div>
