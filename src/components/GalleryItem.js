@@ -6,7 +6,7 @@ import { useThemeUI } from 'theme-ui';
 const GalleryItem = ({ images }) => {
   const context = useThemeUI();
   const {
-    theme: { breakpoints },
+    theme: { breakpoints }
   } = context;
 
   const ImgStyle = css`
@@ -27,7 +27,11 @@ const GalleryItem = ({ images }) => {
 
   return images.map(image => (
     <div key={image.node.childImageSharp.fluid.src}>
-      <Img css={ImgStyle} fluid={image.node.childImageSharp.fluid} />
+      <Img
+        css={ImgStyle}
+        fluid={image.node.childImageSharp.fluid}
+        alt='Image of apartment'
+      />
     </div>
   ));
 };

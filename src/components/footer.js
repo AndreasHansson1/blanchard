@@ -48,7 +48,7 @@ const Footer = () => {
     <StyledFooter>
       <Div>
         <h2>
-          <Link to='/#'>
+          <Link title='Home' to='/#'>
             <strong>B</strong>lanchard
           </Link>
         </h2>

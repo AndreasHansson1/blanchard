@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import useInterval from '../hooks/useInterval';
-import { myTransform } from '../styles/KeyFrames';
+import { scale } from '../styles/KeyFrames';
 
 const WordChange = () => {
   const Span = styled.span`
-    animation: ${myTransform} 400ms ease-in-out;
+    animation: ${scale} 400ms ease-in-out;
     font-size: 1.5rem;
     font-style: italic;
     display: inline-block;

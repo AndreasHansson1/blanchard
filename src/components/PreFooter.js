@@ -62,6 +62,12 @@ const Footer = () => {
           </a>
           <small> (Lovley Spa)</small>
         </div>
+        <div>
+          <a title='WeLove2Ski' href='http://welove2ski.com/champoluc'>
+            WeLove2Ski
+          </a>
+          <small> (Information of the skiing)</small>
+        </div>
       </Div>
     </StyledDiv>
   );
