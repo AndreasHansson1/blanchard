@@ -7,16 +7,16 @@ import { scale, rotate, translate } from '../styles/KeyFrames';
 const Logo = () => {
   const FirstLetter = styled.p`
     display: inline-block;
-    font-size: 3.675rem;
+    font-size: 3.175rem;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     padding: 0;
     margin: 0;
     color: #fff;
-    font-weight: 700;
+    font-weight: 400;
     animation-name: ${translate};
     animation-duration: 350ms;
-
+    animation-delay: 200ms;
     animation-fill-mode: both;
     animation-timing-function: ease-in-out;
   `;
@@ -30,6 +30,7 @@ const Logo = () => {
     margin: 0;
     color: #fff;
     position: relative;
+    font-weight: 400;
     animation-name: ${translate};
     animation-duration: 350ms;
     animation-delay: calc(var(--animation-order) * 100ms);
@@ -40,14 +41,14 @@ const Logo = () => {
   return (
     <>
       <FirstLetter>B</FirstLetter>
-      <StyledParagraph style={{ '--animation-order': 2 }}>l</StyledParagraph>
-      <StyledParagraph style={{ '--animation-order': 3 }}>a</StyledParagraph>
-      <StyledParagraph style={{ '--animation-order': 4 }}>n</StyledParagraph>
-      <StyledParagraph style={{ '--animation-order': 5 }}>c</StyledParagraph>
-      <StyledParagraph style={{ '--animation-order': 6 }}>h</StyledParagraph>
-      <StyledParagraph style={{ '--animation-order': 7 }}>a</StyledParagraph>
-      <StyledParagraph style={{ '--animation-order': 8 }}>r</StyledParagraph>
-      <StyledParagraph style={{ '--animation-order': 9 }}>d</StyledParagraph>
+      <StyledParagraph style={{ '--animation-order': 3 }}>l</StyledParagraph>
+      <StyledParagraph style={{ '--animation-order': 4 }}>a</StyledParagraph>
+      <StyledParagraph style={{ '--animation-order': 5 }}>n</StyledParagraph>
+      <StyledParagraph style={{ '--animation-order': 6 }}>c</StyledParagraph>
+      <StyledParagraph style={{ '--animation-order': 7 }}>h</StyledParagraph>
+      <StyledParagraph style={{ '--animation-order': 8 }}>a</StyledParagraph>
+      <StyledParagraph style={{ '--animation-order': 9 }}>r</StyledParagraph>
+      <StyledParagraph style={{ '--animation-order': 10 }}>d</StyledParagraph>
     </>
   );
 };

@@ -64,7 +64,7 @@ const Header = ({ children }) => {
       color: #fff;
       text-decoration: none;
       background-color: transparent;
-      font-weight: 300;
+      font-weight: 500;
       letter-spacing: 1px;
     }
 

@@ -20,7 +20,10 @@ export const rotate = keyframes`
 
 export const translate = keyframes`
   0% {
-    transform: translateY(-20px)
+    transform: translateY(0)
+  }
+  50% {
+    transform: translateY(-10px)
   }
   100% {
     transform: translateY(0)

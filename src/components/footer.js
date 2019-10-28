@@ -25,13 +25,14 @@ const Footer = () => {
       padding: 0;
       margin: 0;
       color: #fff;
+      font-weight: 400;
     }
 
     a {
       color: #fff;
       text-decoration: none;
       background-color: transparent;
-      font-weight: 300;
+
       letter-spacing: 1px;
     }
 
