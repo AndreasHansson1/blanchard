@@ -79,7 +79,8 @@ function SEO({ description, image, lang, meta, title }) {
         },
         {
           name: 'keywords',
-          content: 'champoluc, apartment, house, for rent, italian alps'
+          content:
+            'champoluc apartment for rent, apartment for rent in champoluc, rent house in italian alps'
         }
       ].concat(meta)}
     >
