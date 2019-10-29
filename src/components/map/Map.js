@@ -36,9 +36,10 @@ const Map = () => {
   const Button = styled.button`
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 43%;
     transform: translate(-50%, -50%);
-    background: lightgrey;
+    background-color: rgba(0, 173, 158, 1);
+    color: #fff;
     padding: 10px 20px;
     border: none;
     font: 16px georgia, serif;
@@ -48,7 +49,7 @@ const Map = () => {
     z-index: 50;
     cursor: pointer;
     :hover {
-      background: darkgrey;
+      background-color: rgba(0, 173, 158, 0.8);
     }
   `;
   return (

@@ -7,7 +7,7 @@ import { scale, rotate, translate } from '../styles/KeyFrames';
 const Logo = () => {
   const FirstLetter = styled.p`
     display: inline-block;
-    font-size: 3.175rem;
+    font-size: 3.375rem;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     padding: 0;
@@ -23,7 +23,7 @@ const Logo = () => {
 
   const StyledParagraph = styled.p`
     display: inline-block;
-    font-size: 3.175rem;
+    font-size: 3.375rem;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
       Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     padding: 0;

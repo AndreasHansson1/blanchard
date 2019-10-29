@@ -21,21 +21,6 @@ const Footer = () => {
     max-width: 960px;
     padding: 1rem 1rem;
 
-    h2 {
-      padding: 0;
-      margin: 0;
-      color: #fff;
-      font-weight: 400;
-    }
-
-    a {
-      color: #fff;
-      text-decoration: none;
-      background-color: transparent;
-
-      letter-spacing: 1px;
-    }
-
     span {
       color: white;
       display: block;
@@ -45,18 +30,37 @@ const Footer = () => {
     }
   `;
 
+  const StyledLink = styled.a`
+    color: rgba(0, 173, 158, 1);
+    text-decoration: none;
+    background-color: transparent;
+
+    &:hover {
+      color: rgba(0, 173, 158, 0.8);
+    }
+  `;
+
+  const H2 = styled.h2`
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    a {
+      color: #fff;
+    }
+  `;
+
   return (
     <StyledFooter>
       <Div>
-        <h2>
+        <H2>
           <Link title='Home' to='/#'>
             <strong>B</strong>lanchard
           </Link>
-        </h2>
+        </H2>
         <span>Copyright &copy; 2019, A. Hansson</span>
-        <a title='Email' href='mailto:info.blanchard@mail.com'>
+        <StyledLink title='Email' href='mailto:info.blanchard@mail.com'>
           info.blanchard[at]mail.com
-        </a>
+        </StyledLink>
       </Div>
     </StyledFooter>
   );

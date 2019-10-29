@@ -65,7 +65,6 @@ const Header = ({ children }) => {
       text-decoration: none;
       background-color: transparent;
       font-weight: 500;
-      letter-spacing: 1px;
     }
 
     @media only screen and (min-width: ${breakpoints[1]}) {
