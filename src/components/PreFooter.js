@@ -5,7 +5,7 @@ import styled from '@emotion/styled';
 const Footer = () => {
   const context = useThemeUI();
   const {
-    theme: { colors }
+    theme: { colors, breakpoints }
   } = context;
 
   const StyledDiv = styled.div`
@@ -23,6 +23,12 @@ const Footer = () => {
     max-width: 960px;
     display: grid;
     grid-template-columns: 1fr;
+    grid-row-gap: 0.5rem;
+    @media only screen and (min-width: ${breakpoints[2]}) {
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 1rem;
+      grid-row-gap: 0.5rem;
+    }
   `;
 
   return (
@@ -33,7 +39,7 @@ const Footer = () => {
           <a title='La Grange' href='https://ristorantelagrange.beepworld.it/'>
             La Grange
           </a>
-          <small> (Best food in Champoluc)</small>
+          <small> (Best food in Champoluc?)</small>
         </div>
         <div>
           <a
@@ -67,6 +73,15 @@ const Footer = () => {
             WeLove2Ski
           </a>
           <small> (Information of the skiing)</small>
+        </div>
+        <div>
+          <a
+            title='Weather YR'
+            href='https://www.yr.no/place/Italy/Aosta_Valley/Champoluc/'
+          >
+            Weather YR
+          </a>
+          <small> (The current weather)</small>
         </div>
       </Div>
     </StyledDiv>
