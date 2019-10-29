@@ -2,7 +2,7 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em georgia, serif;
+  font: 112.5%/1.45em Helvetica Neue, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -14,7 +14,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #ffffff;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: Helvetica Neue, sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -27,14 +27,14 @@ body {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-  color: rgba(68, 114, 175, 1);
+  color: rgba(0, 173, 158, 1);
   font-weight: 600;
   text-decoration: none;
   display: inline-block;
 }
 
 a:hover {
-  color: rgba(68, 114, 175, 0.8);
+  color: rgba(0, 173, 158, 0.8);
   cursor: pointer;
 }
 

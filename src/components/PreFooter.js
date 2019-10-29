@@ -27,7 +27,7 @@ const Footer = () => {
 
   return (
     <StyledDiv>
-      <h3>Links</h3>
+      <h2>Links</h2>
       <Div>
         <div>
           <a title='La Grange' href='https://ristorantelagrange.beepworld.it/'>

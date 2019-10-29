@@ -38,7 +38,8 @@ const Form = () => {
     font-size: 14px;
   `;
   const Button = styled.button`
-    background: lightgrey;
+    background-color: rgba(0, 173, 158, 1);
+    color: #fff;
     padding: 10px 20px;
     border: none;
     font: 16px georgia, serif;
@@ -46,7 +47,7 @@ const Form = () => {
     ${boxshadow};
     margin-left: auto;
     :hover {
-      background: darkgrey;
+      background-color: rgba(0, 173, 158, 0.8);
     }
   `;
 
