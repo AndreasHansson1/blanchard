@@ -66,7 +66,7 @@ const Footer = () => {
           <a title='Monte Rosa Spa' href='https://monterosaspa.it/'>
             Monte Rosa Spa
           </a>
-          <small> (Lovley Spa)</small>
+          <small> (Lovely Spa)</small>
         </div>
         <div>
           <a title='WeLove2Ski' href='http://welove2ski.com/champoluc'>

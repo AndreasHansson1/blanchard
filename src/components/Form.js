@@ -11,7 +11,7 @@ const Form = () => {
   const StyledForm = styled.form`
     display: flex;
     flex-wrap: wrap;
-    background: #f8f8ff;
+    background: #ecf5eb;
     padding: 2rem;
   `;
 
