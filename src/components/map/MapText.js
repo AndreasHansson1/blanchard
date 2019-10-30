@@ -12,7 +12,7 @@ const MapText = () => {
     padding: ${textPadding};
     line-height: 1.7;
     order: 1;
-    @media only screen and (min-width: ${breakpoints[2]}) {
+    @media only screen and (min-width: ${breakpoints[1]}) {
       order: -1;
     }
   `;

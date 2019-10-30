@@ -16,8 +16,10 @@ const MapContainer = () => {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
     position: relative;
-    @media only screen and (min-width: ${breakpoints[2]}) {
+    @media only screen and (min-width: ${breakpoints[1]}) {
       grid-template-columns: 1fr 1fr;
+    }
+    @media only screen and (min-width: ${breakpoints[2]}) {
       min-height: 50vh;
     }
   `;

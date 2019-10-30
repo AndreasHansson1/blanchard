@@ -26,7 +26,6 @@ const Map = () => {
       width: 100%;
       height: 100%;
       min-height: 15rem;
-      max-height: 30rem;
       filter: sepia(0);
       position: relative;
     }
