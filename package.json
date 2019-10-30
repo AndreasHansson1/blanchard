@@ -12,6 +12,7 @@
     "gatsby": "^2.8.6",
     "gatsby-background-image": "^0.7.4",
     "gatsby-image": "^2.1.4",
+    "gatsby-plugin-canonical-urls": "^2.1.13",
     "gatsby-plugin-emotion": "^4.0.7",
     "gatsby-plugin-google-analytics": "^2.1.7",
     "gatsby-plugin-manifest": "^2.1.1",

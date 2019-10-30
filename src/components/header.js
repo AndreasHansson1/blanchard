@@ -86,12 +86,7 @@ const Header = ({ children }) => {
       <StyledHeader>
         <Wrapper>
           <Div>
-            <Link
-              rel='canonical'
-              href='https://blanchard.netlify.com/'
-              title='Home'
-              to='/#'
-            >
+            <Link title='Home' to='/#'>
               <Logo />
             </Link>
             <H1>-champoluc apartment for rent-</H1>

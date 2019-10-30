@@ -53,12 +53,7 @@ const Footer = () => {
     <StyledFooter>
       <Div>
         <H2>
-          <Link
-            rel='canonical'
-            href='https://blanchard.netlify.com/'
-            title='Home'
-            to='/#'
-          >
+          <Link title='Home' to='/#'>
             <strong>B</strong>lanchard
           </Link>
         </H2>

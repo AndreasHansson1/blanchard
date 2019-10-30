@@ -63,6 +63,12 @@ module.exports = {
       options: {
         trackingId: 'UA-145768757-1'
       }
+    },
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://blanchard.netlify.com/`
+      }
     }
   ]
 };
