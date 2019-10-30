@@ -27,7 +27,7 @@ const HeroImage = () => {
     <Img
       css={HeroStyle}
       fluid={data.file.childImageSharp.fluid}
-      alt="Terrace View"
+      alt='Champoluc apartment for rent, view of terrace'
     />
   );
 };
