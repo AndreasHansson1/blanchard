@@ -6,6 +6,10 @@ const CardImage = ({ image }) => {
   const Image = styled.div`
     height: 100%;
 
+    .gatsby-image-wrapper {
+      height: 100%;
+    }
+
     img {
       filter: sepia(0.2);
     }

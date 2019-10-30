@@ -5,14 +5,14 @@ import { useThemeUI } from 'theme-ui';
 const MapText = () => {
   const context = useThemeUI();
   const {
-    theme: { breakpoints }
+    theme: { breakpoints, textPadding }
   } = context;
 
   const Text = styled.div`
-    padding: 0.5rem 2.5rem;
+    padding: ${textPadding};
     line-height: 1.7;
     order: 1;
-    @media only screen and (min-width: ${breakpoints[1]}) {
+    @media only screen and (min-width: ${breakpoints[2]}) {
       order: -1;
     }
   `;

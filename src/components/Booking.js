@@ -6,11 +6,11 @@ import Form from './Form';
 const Booking = () => {
   const context = useThemeUI();
   const {
-    theme: { breakpoints }
+    theme: { breakpoints, textPadding }
   } = context;
 
   const Div = styled.div`
-    padding: 0.5rem 2.5rem;
+    padding: ${textPadding};
     line-height: 1.7;
     max-width: 35rem;
     margin: auto;
@@ -25,7 +25,7 @@ const Booking = () => {
     margin: 0;
     @media only screen and (min-width: ${breakpoints[0]}) {
       max-width: 35rem;
-      padding: 0.5rem 2.5rem;
+      padding: ${textPadding};
       margin: auto;
     }
   `;
