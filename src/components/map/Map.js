@@ -22,21 +22,26 @@ const Map = () => {
   `);
 
   const A = styled.a`
-    position: relative;
-
     img {
       width: 100%;
       height: 100%;
       min-height: 15rem;
       max-height: 30rem;
       filter: sepia(0);
+      position: relative;
+    }
+
+    div {
+      width: 100%;
+      height: 100%;
+      position: relative;
     }
   `;
 
   const Button = styled.button`
     position: absolute;
     left: 50%;
-    top: 43%;
+    top: 47%;
     transform: translate(-50%, -50%);
     background-color: rgba(0, 173, 158, 1);
     color: #fff;
@@ -57,19 +62,21 @@ const Map = () => {
       title='Google Map'
       href='https://www.google.com/maps/d/u/0/viewer?mid=1rbx0n65ngD1IssLAUlAVDPRH2ouzz8lG&ll=45.86561089999999%2C7.7292956&z=17'
     >
-      {/* <Overlay /> */}
-      <Img
-        id='map'
-        fluid={data.file.childImageSharp.fluid}
-        alt='Google Map Champoluc Apartment Location'
-        title='Map Champoluc'
-      />
-      <Button
-        type='button'
-        onclick="location.href='https://www.google.com/maps/d/u/0/viewer?mid=1rbx0n65ngD1IssLAUlAVDPRH2ouzz8lG&ll=45.86561089999999%2C7.7292956&z=17'"
-      >
-        Go to map
-      </Button>
+      <div>
+        {/* <Overlay /> */}
+        <Img
+          id='map'
+          fluid={data.file.childImageSharp.fluid}
+          alt='Google Map Champoluc Apartment Location'
+          title='Map Champoluc'
+        />
+        <Button
+          type='button'
+          onclick="location.href='https://www.google.com/maps/d/u/0/viewer?mid=1rbx0n65ngD1IssLAUlAVDPRH2ouzz8lG&ll=45.86561089999999%2C7.7292956&z=17'"
+        >
+          Go to map
+        </Button>
+      </div>
     </A>
   );
 };

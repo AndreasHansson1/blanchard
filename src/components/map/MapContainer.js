@@ -7,7 +7,7 @@ import Map from './Map';
 const MapContainer = () => {
   const context = useThemeUI();
   const {
-    theme: { breakpoints },
+    theme: { breakpoints }
   } = context;
 
   const MapWrapper = styled.div`
@@ -16,10 +16,8 @@ const MapContainer = () => {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto;
     position: relative;
-    @media only screen and (min-width: ${breakpoints[1]}) {
-      grid-template-columns: 1fr 1fr;
-    }
     @media only screen and (min-width: ${breakpoints[2]}) {
+      grid-template-columns: 1fr 1fr;
       min-height: 50vh;
     }
   `;
