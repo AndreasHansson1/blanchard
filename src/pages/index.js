@@ -30,7 +30,7 @@ const IndexPage = ({ data }) => {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
-        <SEO title='Champoluc Apartment' />
+        <SEO title='Champoluc apartment for rent' />
         <HeroContainer>
           <HeroImage />
         </HeroContainer>
