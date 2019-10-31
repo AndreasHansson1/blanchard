@@ -72,7 +72,7 @@ const Header = () => {
     top: 14rem;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2rem;
+    font-size: 1.5rem;
 
     @media only screen and (min-width: ${breakpoints[1]}) {
       top: 72vh;
@@ -82,7 +82,7 @@ const Header = () => {
   `;
 
   const H1 = styled.h1`
-    font-size: 3rem;
+    font-size: 1.8rem;
     font-weight: 300;
     padding: 0;
     margin: 0;
@@ -120,7 +120,7 @@ const Header = () => {
         <StyledHeader sticky={sticky}>
           <DivTitle>
             <H1>
-              <strong>champoluc</strong> apartment for rent
+              <strong>Champoluc</strong> apartment for rent
             </H1>
           </DivTitle>
           <DivWords>
