@@ -23,8 +23,8 @@ const MapText = () => {
       <p>
         If you are flying in, Torino is the closest airport around 1,5 hour
         drive. Milano’s airports (Linate, Malpensa) and Bergamo is a 2 - 2,5
-        hour drive. The house is approx 3 km from <strong>Champoluc</strong>{' '}
-        village and 1 km from the Frachey lift station, that takes you to the{' '}
+        hour drive. The house is approx 3 km from Champoluc village and 1 km
+        from the Frachey lift station, that takes you to the{' '}
         <a
           title='Visit Moterosa'
           href='https://www.visitmonterosa.com/en/monterosa-ski/'

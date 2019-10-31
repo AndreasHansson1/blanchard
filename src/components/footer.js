@@ -53,9 +53,9 @@ const Footer = () => {
     <StyledFooter>
       <Div>
         <H2>
-          <Link title='Home' to='/#'>
-            <strong>B</strong>lanchard
-          </Link>
+          <a title='Home' href='/#'>
+            Blanchard
+          </a>
         </H2>
         <span>Copyright &copy; 2019, A. Hansson</span>
         <StyledLink title='Email' href='mailto:info.blanchard@mail.com'>

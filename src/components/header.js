@@ -40,43 +40,37 @@ const Header = () => {
   } = context;
 
   const StyledHeader = styled.header`
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     width: 100%;
     height: 40vh;
-    padding: 0;
+    padding: 1rem;
     @media only screen and (min-width: ${breakpoints[1]}) {
       height: 100vh;
     }
   `;
 
   const DivTitle = styled.div`
-    /* background-color: lightblue; */
-    max-width: 70%;
+    max-width: 15rem;
     padding: 0;
     text-align: center;
-    position: absolute;
-    top: 7rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
     @media only screen and (min-width: ${breakpoints[1]}) {
-      top: 50vh;
-      transform: translate(-50%, -50%);
+      max-width: 60%;
+      padding-bottom: 1rem;
+    }
+    @media only screen and (min-width: ${breakpoints[2]}) {
+      max-width: 50%;
     }
   `;
 
   const DivWords = styled.div`
-    /* background-color: lightblue; */
-    padding: 0;
+    padding: 1rem 0;
     text-align: center;
-    position: absolute;
-    top: 12rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
     font-size: 1.5rem;
-
+    transform: rotate(-5deg);
     @media only screen and (min-width: ${breakpoints[1]}) {
-      top: 72vh;
-      transform: translate(-50%, -50%);
       font-size: 4rem;
     }
   `;
@@ -86,11 +80,12 @@ const Header = () => {
     font-weight: 300;
     padding: 0;
     margin: 0;
-    margin-bottom: 2px;
     color: #fff;
-
     @media only screen and (min-width: ${breakpoints[1]}) {
-      font-size: 5rem;
+      font-size: 3rem;
+    }
+    @media only screen and (min-width: ${breakpoints[2]}) {
+      font-size: 4rem;
     }
   `;
 
