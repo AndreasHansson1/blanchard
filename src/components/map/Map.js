@@ -50,7 +50,7 @@ const Map = () => {
     ${borderRadius};
     ${boxshadow};
     margin-left: auto;
-    z-index: 50;
+    z-index: 4;
     cursor: pointer;
     :hover {
       background-color: rgba(0, 173, 158, 0.8);

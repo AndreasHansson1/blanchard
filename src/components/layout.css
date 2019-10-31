@@ -28,7 +28,6 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   color: rgba(0, 173, 158, 1);
-  font-weight: 600;
   text-decoration: none;
   display: inline-block;
 }

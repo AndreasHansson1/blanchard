@@ -1,14 +1,28 @@
 /** @jsx jsx */
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
-import PropTypes from 'prop-types';
 import { jsx } from '@emotion/core';
 import styled from '@emotion/styled';
 import { useThemeUI } from 'theme-ui';
+import { useScrollPosition } from '../hooks/useScrollPosition';
+import { useWindowSize } from '../hooks/useWindowSize';
 import BackgroundImage from 'gatsby-background-image';
 import Logo from './Logo';
+import WordChange from './WordChange';
 
-const Header = ({ children }) => {
+const Header = () => {
+  const [sticky, setSticky] = useState(false);
+  const windowHeight = useWindowSize().height;
+  const height = windowHeight - 50;
+
+  useScrollPosition(({ currPos }) => {
+    if (currPos.y < `-${height}`) {
+      setSticky(true);
+    } else {
+      setSticky(false);
+    }
+  });
+
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "header-image/mountain.jpg" }) {
@@ -28,17 +42,16 @@ const Header = ({ children }) => {
   const StyledHeader = styled.header`
     width: 100%;
     height: 30vh;
-    z-index: 10;
     padding: 0;
-    display: flex;
-    align-items: flex-end;
+    @media only screen and (min-width: ${breakpoints[1]}) {
+      height: 100vh;
+    }
   `;
 
   const Wrapper = styled.div`
     margin: 0;
     width: 100%;
     max-width: 960px;
-    padding-bottom: 1rem;
     @media only screen and (min-width: ${breakpoints[1]}) {
       margin: 0 auto;
       padding: 0 0 1rem 1rem;
@@ -55,21 +68,11 @@ const Header = ({ children }) => {
   `;
 
   const Div = styled.div`
-    color: #fff;
     margin: auto;
     padding: 0;
     text-align: center;
 
-    a {
-      color: #fff;
-      text-decoration: none;
-      background-color: transparent;
-      font-weight: 500;
-    }
-
     @media only screen and (min-width: ${breakpoints[1]}) {
-      float: left;
-      margin: 0;
     }
   `;
   const imageData = [
@@ -77,29 +80,37 @@ const Header = ({ children }) => {
     data.file.childImageSharp.fluid
   ];
 
-  return (
-    <BackgroundImage
-      fluid={imageData}
-      backgroundColor='transparent'
-      alt='Mountains'
-    >
-      <StyledHeader>
-        <Wrapper>
-          <Div>
-            <Link title='Home' to='/#'>
-              <Logo />
-            </Link>
-            <H1>-champoluc apartment for rent-</H1>
-            {children}
-          </Div>
-        </Wrapper>
-      </StyledHeader>
-    </BackgroundImage>
-  );
-};
+  const StickyHeader = styled.div`
+    @media only screen and (min-width: ${breakpoints[1]}) {
+      height: 50px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 5;
+      position: fixed;
+      top: 0;
+    }
+  `;
 
-Header.propTypes = {
-  children: PropTypes.node.isRequired
+  return (
+    <>
+      <BackgroundImage
+        fluid={imageData}
+        backgroundColor='transparent'
+        alt='Mountains'
+      >
+        <StyledHeader sticky={sticky}>
+          <Wrapper>
+            <Div>
+              <H1>-champoluc apartment for rent-</H1>
+              <WordChange />
+            </Div>
+          </Wrapper>
+        </StyledHeader>
+      </BackgroundImage>
+      <Logo sticky={sticky} />
+      {sticky && <StickyHeader sticky={sticky}></StickyHeader>}
+    </>
+  );
 };
 
 export default Header;

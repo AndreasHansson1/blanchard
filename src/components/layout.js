@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from '@emotion/styled';
 import { useThemeUI } from 'theme-ui';
-import WordChange from './WordChange';
 import Header from './header';
 import PreFooter from './PreFooter';
 import Footer from './footer';
@@ -36,9 +35,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header>
-        <WordChange />
-      </Header>
+      <Header />
       <Main>{children}</Main>
       <PreFooter />
       <Footer />
