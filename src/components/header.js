@@ -41,7 +41,7 @@ const Header = () => {
 
   const StyledHeader = styled.header`
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     padding: 0;
     @media only screen and (min-width: ${breakpoints[1]}) {
       height: 100vh;
@@ -69,7 +69,7 @@ const Header = () => {
     padding: 0;
     text-align: center;
     position: absolute;
-    top: 14rem;
+    top: 12rem;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 1.5rem;
@@ -82,7 +82,7 @@ const Header = () => {
   `;
 
   const H1 = styled.h1`
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 300;
     padding: 0;
     margin: 0;
