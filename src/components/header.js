@@ -49,6 +49,7 @@ const Header = () => {
     padding: 1rem;
     @media only screen and (min-width: ${breakpoints[1]}) {
       height: 100vh;
+      padding-bottom: 5rem;
     }
   `;
 
@@ -58,7 +59,7 @@ const Header = () => {
     text-align: center;
     @media only screen and (min-width: ${breakpoints[1]}) {
       max-width: 60%;
-      padding-bottom: 1rem;
+      padding-bottom: 3rem;
     }
     @media only screen and (min-width: ${breakpoints[2]}) {
       max-width: 50%;
