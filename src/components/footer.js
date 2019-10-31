@@ -41,7 +41,7 @@ const Footer = () => {
   `;
 
   const H2 = styled.h2`
-    font-weight: 400;
+    font-family: Staatliches;
     padding: 0;
     margin: 0;
     a {

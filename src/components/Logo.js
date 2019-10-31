@@ -28,6 +28,7 @@ const Logo = ({ sticky }) => {
   `;
 
   const FirstLetter = styled.p`
+    font-family: Staatliches;
     display: inline-block;
     color: #fff;
     padding: 0;
@@ -40,6 +41,7 @@ const Logo = ({ sticky }) => {
   `;
 
   const StyledParagraph = styled.p`
+    font-family: Staatliches;
     display: inline-block;
     color: #fff;
     padding: 0;
