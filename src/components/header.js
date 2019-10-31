@@ -48,33 +48,52 @@ const Header = () => {
     }
   `;
 
-  const Wrapper = styled.div`
-    margin: 0;
-    width: 100%;
-    max-width: 960px;
+  const DivTitle = styled.div`
+    /* background-color: lightblue; */
+    max-width: 70%;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    top: 7rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     @media only screen and (min-width: ${breakpoints[1]}) {
-      margin: 0 auto;
-      padding: 0 0 1rem 1rem;
+      top: 50vh;
+      transform: translate(-50%, -50%);
+    }
+  `;
+
+  const DivWords = styled.div`
+    /* background-color: lightblue; */
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    top: 14rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+
+    @media only screen and (min-width: ${breakpoints[1]}) {
+      top: 72vh;
+      transform: translate(-50%, -50%);
+      font-size: 4rem;
     }
   `;
 
   const H1 = styled.h1`
-    font-size: 1rem;
+    font-size: 3rem;
     font-weight: 300;
     padding: 0;
     margin: 0;
     margin-bottom: 2px;
     color: #fff;
-  `;
-
-  const Div = styled.div`
-    margin: auto;
-    padding: 0;
-    text-align: center;
 
     @media only screen and (min-width: ${breakpoints[1]}) {
+      font-size: 5rem;
     }
   `;
+
   const imageData = [
     'linear-gradient(rgba(25,25,112, 0.3), rgba(25,25,112, 0.1))',
     data.file.childImageSharp.fluid
@@ -99,12 +118,14 @@ const Header = () => {
         alt='Mountains'
       >
         <StyledHeader sticky={sticky}>
-          <Wrapper>
-            <Div>
-              <H1>-champoluc apartment for rent-</H1>
-              <WordChange />
-            </Div>
-          </Wrapper>
+          <DivTitle>
+            <H1>
+              <strong>champoluc</strong> apartment for rent
+            </H1>
+          </DivTitle>
+          <DivWords>
+            <WordChange />
+          </DivWords>
         </StyledHeader>
       </BackgroundImage>
       <Logo sticky={sticky} />

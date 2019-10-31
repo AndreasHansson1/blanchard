@@ -23,7 +23,7 @@ export const translate = keyframes`
     transform: translateY(0)
   }
   50% {
-    transform: translateY(-10px)
+    transform: translateY(-7px)
   }
   100% {
     transform: translateY(0)

@@ -8,22 +8,22 @@ import { useThemeUI } from 'theme-ui';
 const Logo = ({ sticky }) => {
   const context = useThemeUI();
   const {
-    theme: { breakpoints }
+    theme: { breakpoints, colors }
   } = context;
 
   const Div = styled.div`
     position: absolute;
     top: 10px;
     left: 10px;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: 500;
     z-index: 10;
     @media only screen and (min-width: ${breakpoints[1]}) {
       position: fixed;
-      font-weight: ${props => (props.sticky ? '400' : '600')};
+      font-weight: ${props => (props.sticky ? '500' : '600')};
       top: ${props => (props.sticky ? '10px' : '1rem')};
       left: 1rem;
-      font-size: ${props => (props.sticky ? '2rem' : '3.375rem')};
+      font-size: ${props => (props.sticky ? '1.5rem' : '2rem')};
     }
   `;
 
@@ -34,7 +34,6 @@ const Logo = ({ sticky }) => {
     color: #fff;
     padding: 0;
     margin: 0;
-
     animation-name: ${translate};
     animation-duration: 350ms;
     animation-delay: 200ms;
@@ -50,7 +49,6 @@ const Logo = ({ sticky }) => {
     padding: 0;
     margin: 0;
     position: relative;
-
     animation-name: ${translate};
     animation-duration: 350ms;
     animation-delay: calc(var(--animation-order) * 100ms);
@@ -62,29 +60,29 @@ const Logo = ({ sticky }) => {
     <>
       <Div sticky={sticky}>
         <a href='/#' title='home'>
-          <FirstLetter>B</FirstLetter>
-          <StyledParagraph style={{ '--animation-order': 3 }}>
+          <FirstLetter sticky={sticky}>B</FirstLetter>
+          <StyledParagraph style={{ '--animation-order': 3 }} sticky={sticky}>
             l
           </StyledParagraph>
-          <StyledParagraph style={{ '--animation-order': 4 }}>
+          <StyledParagraph style={{ '--animation-order': 4 }} sticky={sticky}>
             a
           </StyledParagraph>
-          <StyledParagraph style={{ '--animation-order': 5 }}>
+          <StyledParagraph style={{ '--animation-order': 5 }} sticky={sticky}>
             n
           </StyledParagraph>
-          <StyledParagraph style={{ '--animation-order': 6 }}>
+          <StyledParagraph style={{ '--animation-order': 6 }} sticky={sticky}>
             c
           </StyledParagraph>
-          <StyledParagraph style={{ '--animation-order': 7 }}>
+          <StyledParagraph style={{ '--animation-order': 7 }} sticky={sticky}>
             h
           </StyledParagraph>
-          <StyledParagraph style={{ '--animation-order': 8 }}>
+          <StyledParagraph style={{ '--animation-order': 8 }} sticky={sticky}>
             a
           </StyledParagraph>
-          <StyledParagraph style={{ '--animation-order': 9 }}>
+          <StyledParagraph style={{ '--animation-order': 9 }} sticky={sticky}>
             r
           </StyledParagraph>
-          <StyledParagraph style={{ '--animation-order': 10 }}>
+          <StyledParagraph style={{ '--animation-order': 10 }} sticky={sticky}>
             d
           </StyledParagraph>
         </a>
