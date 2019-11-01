@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React, { useState } from 'react';
-import { Link, graphql, useStaticQuery } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 import { jsx } from '@emotion/core';
 import styled from '@emotion/styled';
 import { useThemeUI } from 'theme-ui';
