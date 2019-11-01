@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'theme-ui';
 import theme from './src/gatsby-plugin-theme-ui';
 import { object } from 'prop-types';
-import './src/styles/global.css';
+// import './src/styles/global.css';
 
 // Polyfill for lazy loading etc in Safari and IE
 export const onClientEntry = async () => {
