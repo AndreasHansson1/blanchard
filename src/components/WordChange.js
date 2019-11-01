@@ -6,8 +6,7 @@ import { scale } from '../styles/KeyFrames';
 const WordChange = () => {
   const Span = styled.span`
     animation: ${scale} 500ms ease-in-out;
-
-    font-style: italic;
+    font-family: Tangerine;
     display: inline-block;
     color: #fff;
     min-width: 10rem;

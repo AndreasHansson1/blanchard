@@ -17,6 +17,7 @@
     "gatsby-plugin-google-analytics": "^2.1.7",
     "gatsby-plugin-manifest": "^2.1.1",
     "gatsby-plugin-netlify": "^2.1.5",
+    "gatsby-plugin-preload-fonts": "^1.0.15",
     "gatsby-plugin-react-helmet": "^3.0.12",
     "gatsby-plugin-robots-txt": "^1.5.0",
     "gatsby-plugin-sharp": "^2.1.6",
@@ -54,7 +55,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "lint": "eslint --fix 'src/**/*.js'"
+    "lint": "eslint --fix 'src/**/*.js'",
+    "preload-fonts": "gatsby-preload-fonts"
   },
   "repository": {
     "type": "git",

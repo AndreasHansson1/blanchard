@@ -85,42 +85,6 @@ function SEO({ description, image, lang, meta, title }) {
       ].concat(meta)}
     >
       <link
-        rel='preload'
-        as='font'
-        type='otf/ttf'
-        href='/src/fonts/Merriweather-Regular.ttf'
-        crossorigin
-      />
-      <link
-        rel='preload'
-        as='font'
-        type='otf/ttf'
-        href='/src/fonts/Lato-Light.ttf'
-        crossorigin
-      />
-      <link
-        rel='preload'
-        as='font'
-        type='otf/ttf'
-        href='/src/fonts/Lato-Regular.ttf'
-        crossorigin
-      />
-      <link
-        rel='preload'
-        as='font'
-        type='otf/ttf'
-        href='/src/fonts/Staatliches-Regular.ttf'
-        crossorigin
-      />
-      <link
-        rel='preload'
-        as='font'
-        type='otf/ttf'
-        href='/src/fonts/Tangerine-Regular.ttf'
-        crossorigin
-      />
-
-      <link
         rel='apple-touch-startup-image'
         media='(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)'
         href='/apple-launch-1125x2436.png'
