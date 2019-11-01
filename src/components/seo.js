@@ -88,28 +88,35 @@ function SEO({ description, image, lang, meta, title }) {
         rel='preload'
         as='font'
         type='font/ttf'
-        href='/src/fonts/Merriweather-Regular.ttf'
+        href='/src/fonts/Merriweather-Regular.otf/ttf'
         crossorigin
       />
       <link
         rel='preload'
         as='font'
         type='font/ttf'
-        href='/src/fonts/Lato-Light.ttf'
+        href='/src/fonts/Lato-Light.otf/ttf'
         crossorigin
       />
       <link
         rel='preload'
         as='font'
         type='font/ttf'
-        href='/src/fonts/Lato-Regular.ttf'
+        href='/src/fonts/Lato-Regular.otf/ttf'
         crossorigin
       />
       <link
         rel='preload'
         as='font'
         type='font/ttf'
-        href='/src/fonts/Staatliches-Regular.ttf'
+        href='/src/fonts/Staatliches-Regular.otf/ttf'
+        crossorigin
+      />
+      <link
+        rel='preload'
+        as='font'
+        type='font/ttf'
+        href='/src/fonts/Tangerine-Regular.otf/ttf'
         crossorigin
       />
 
