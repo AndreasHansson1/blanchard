@@ -69,7 +69,7 @@ const Header = () => {
   const DivWords = styled.div`
     padding: 0.5rem 0;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     transform: rotate(-5deg);
     @media only screen and (min-width: ${breakpoints[1]}) {
       font-size: 4rem;
@@ -77,7 +77,7 @@ const Header = () => {
   `;
 
   const H1 = styled.h1`
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     font-weight: 300;
     padding: 0;
     margin: 0;

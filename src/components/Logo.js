@@ -2,7 +2,7 @@
 import React from 'react';
 import { jsx } from '@emotion/core';
 import styled from '@emotion/styled';
-import { scale, rotate, translate } from '../styles/KeyFrames';
+import { translate } from '../styles/KeyFrames';
 import { useThemeUI } from 'theme-ui';
 
 const Logo = ({ sticky }) => {
@@ -27,23 +27,12 @@ const Logo = ({ sticky }) => {
     }
   `;
 
-  const FirstLetter = styled.p`
-    font-family: Staatliches;
-    display: inline-block;
-    color: #fff;
-    padding: 0;
-    margin: 0;
-    animation-name: ${translate};
-    animation-duration: 350ms;
-    animation-delay: 200ms;
-    animation-fill-mode: both;
-    animation-timing-function: ease-in-out;
-  `;
-
   const StyledParagraph = styled.p`
     font-family: Staatliches;
     display: inline-block;
     color: #fff;
+    text-shadow: -1px -1px 0 ${colors.text}, 1px -1px 0 ${colors.text},
+      -1px 1px 0 ${colors.text}, 1px 1px 0 ${colors.text};
     padding: 0;
     margin: 0;
     position: relative;
@@ -58,7 +47,9 @@ const Logo = ({ sticky }) => {
     <>
       <Div sticky={sticky}>
         <a href='/#' title='home'>
-          <FirstLetter sticky={sticky}>B</FirstLetter>
+          <StyledParagraph style={{ '--animation-order': 2 }} sticky={sticky}>
+            B
+          </StyledParagraph>
           <StyledParagraph style={{ '--animation-order': 3 }} sticky={sticky}>
             l
           </StyledParagraph>
