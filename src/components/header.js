@@ -49,7 +49,7 @@ const Header = () => {
     padding: 1rem;
     @media only screen and (min-width: ${breakpoints[1]}) {
       height: 100vh;
-      padding-bottom: 5rem;
+      padding-bottom: 6vh;
     }
   `;
 
@@ -67,7 +67,7 @@ const Header = () => {
   `;
 
   const DivWords = styled.div`
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     text-align: center;
     font-size: 1.5rem;
     transform: rotate(-5deg);
