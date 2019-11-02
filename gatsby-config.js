@@ -14,7 +14,6 @@ module.exports = {
     'gatsby-plugin-robots-txt',
     'gatsby-plugin-netlify',
     'gatsby-plugin-theme-ui',
-    `gatsby-plugin-preload-fonts`,
     {
       resolve: 'gatsby-source-filesystem',
       options: {
