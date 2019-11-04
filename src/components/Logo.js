@@ -36,44 +36,13 @@ const Logo = ({ sticky }) => {
     padding: 0;
     margin: 0;
     position: relative;
-    animation-name: ${translate};
-    animation-duration: 350ms;
-    animation-delay: calc(var(--animation-order) * 100ms);
-    animation-fill-mode: both;
-    animation-timing-function: ease-in-out;
   `;
 
   return (
     <>
       <Div sticky={sticky}>
         <a href='/#' title='home'>
-          <StyledParagraph style={{ '--animation-order': 2 }} sticky={sticky}>
-            B
-          </StyledParagraph>
-          <StyledParagraph style={{ '--animation-order': 3 }} sticky={sticky}>
-            l
-          </StyledParagraph>
-          <StyledParagraph style={{ '--animation-order': 4 }} sticky={sticky}>
-            a
-          </StyledParagraph>
-          <StyledParagraph style={{ '--animation-order': 5 }} sticky={sticky}>
-            n
-          </StyledParagraph>
-          <StyledParagraph style={{ '--animation-order': 6 }} sticky={sticky}>
-            c
-          </StyledParagraph>
-          <StyledParagraph style={{ '--animation-order': 7 }} sticky={sticky}>
-            h
-          </StyledParagraph>
-          <StyledParagraph style={{ '--animation-order': 8 }} sticky={sticky}>
-            a
-          </StyledParagraph>
-          <StyledParagraph style={{ '--animation-order': 9 }} sticky={sticky}>
-            r
-          </StyledParagraph>
-          <StyledParagraph style={{ '--animation-order': 10 }} sticky={sticky}>
-            d
-          </StyledParagraph>
+          <StyledParagraph sticky={sticky}>Blanchard</StyledParagraph>
         </a>
       </Div>
     </>

@@ -1,18 +1,34 @@
 import React, { useState } from 'react';
 import styled from '@emotion/styled';
 import useInterval from '../hooks/useInterval';
-import { scale } from '../styles/KeyFrames';
+import { translate } from '../styles/KeyFrames';
 
 const WordChange = () => {
-  const Span = styled.span`
-    animation: ${scale} 500ms ease-in-out;
-    font-family: Tangerine;
+  const StyledP = styled.p`
+    font-style: italic;
     display: inline-block;
     color: #fff;
-    min-width: 10rem;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    animation-name: ${translate};
+    animation-duration: 350ms;
+    animation-delay: calc(var(--animation-order) * 100ms);
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
   `;
 
-  const words = ['välkommen!', 'welcome!', 'benvenuto!'];
+  const wordsArr = [
+    ['v', 'ä', 'l', 'k', 'o', 'm', 'm', 'e', 'n', '!'],
+    ['w', 'e', 'l', 'c', 'o', 'm', 'e', '!'],
+    ['b', 'e', 'n', 'v', 'e', 'n', 'u', 't', 'o', '!']
+  ];
+  const words = wordsArr.map(newArr =>
+    newArr.map((p, key) => (
+      <StyledP style={{ '--animation-order': key }}>{p}</StyledP>
+    ))
+  );
+
   // eslint-disable-next-line prefer-const
   let [counter, setCounter] = useState(0);
 
@@ -22,9 +38,9 @@ const WordChange = () => {
       counter = 0;
     }
     setCounter(counter);
-  }, 1500);
+  }, 2000);
 
-  return <Span>{words[counter]}</Span>;
+  return <>{words[counter]}</>;
 };
 
 export default WordChange;

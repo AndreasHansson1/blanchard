@@ -69,10 +69,10 @@ const Header = () => {
   const DivWords = styled.div`
     padding: 0.5rem 0;
     text-align: center;
-    font-size: 2.5rem;
-    transform: rotate(-5deg);
+    font-size: 1.7rem;
+    /* transform: rotate(-5deg); */
     @media only screen and (min-width: ${breakpoints[1]}) {
-      font-size: 4rem;
+      font-size: 3rem;
     }
   `;
 
