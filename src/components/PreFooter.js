@@ -5,12 +5,12 @@ import styled from '@emotion/styled';
 const Footer = () => {
   const context = useThemeUI();
   const {
-    theme: { colors, breakpoints }
+    theme: { colors, breakpoints, mainPadding }
   } = context;
 
   const StyledDiv = styled.div`
     background-color: ${colors.lightGrey};
-    padding: 1rem 1rem;
+    padding: ${mainPadding};
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,12 +19,11 @@ const Footer = () => {
 
   const Div = styled.div`
     margin: 0 auto 1rem auto;
-    padding: 0 1rem;
     max-width: 960px;
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 0.5rem;
-    @media only screen and (min-width: ${breakpoints[2]}) {
+    @media only screen and (min-width: ${breakpoints[1]}) {
       grid-template-columns: 1fr 1fr;
       grid-column-gap: 1rem;
       grid-row-gap: 0.5rem;

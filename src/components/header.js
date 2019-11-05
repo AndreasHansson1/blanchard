@@ -36,7 +36,7 @@ const Header = () => {
   `);
   const context = useThemeUI();
   const {
-    theme: { breakpoints }
+    theme: { breakpoints, mainPadding }
   } = context;
 
   const StyledHeader = styled.header`
@@ -46,7 +46,7 @@ const Header = () => {
     align-items: center;
     width: 100%;
     height: 40vh;
-    padding: 1rem;
+    padding: ${mainPadding};
     @media only screen and (min-width: ${breakpoints[1]}) {
       height: 100vh;
       padding-bottom: 6vh;

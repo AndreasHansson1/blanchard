@@ -42,7 +42,7 @@ const Form = () => {
     color: #fff;
     padding: 10px 20px;
     border: none;
-    font: 16px georgia, serif;
+    font-size: 0.8rem;
     ${borderRadius};
     ${boxshadow};
     margin-left: auto;

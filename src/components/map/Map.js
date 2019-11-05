@@ -46,7 +46,7 @@ const Map = () => {
     color: #fff;
     padding: 10px 20px;
     border: none;
-    font: 16px georgia, serif;
+    font-size: 0.8rem;
     ${borderRadius};
     ${boxshadow};
     margin-left: auto;
@@ -62,7 +62,6 @@ const Map = () => {
       href='https://www.google.com/maps/d/u/0/viewer?mid=1rbx0n65ngD1IssLAUlAVDPRH2ouzz8lG&ll=45.86561089999999%2C7.7292956&z=17'
     >
       <div>
-        {/* <Overlay /> */}
         <Img
           id='map'
           fluid={data.file.childImageSharp.fluid}

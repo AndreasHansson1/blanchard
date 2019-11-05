@@ -1,8 +1,8 @@
 html {
-  font-family: Merriweather;
+  font-family: Lato;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em Merriweather;
+  font: 112.5%/1.45em Lato;
   box-sizing: border-box;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -14,7 +14,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #ffffff;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: Lato, Merriweather;
+  font-family: Lato;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -93,7 +93,7 @@ p {
   margin: 0;
   padding: 0;
   margin-bottom: 0.6rem;
-  font-family: Merriweather;
+  font-family: Lato;
 }
 
 p *:last-child {
@@ -101,7 +101,7 @@ p *:last-child {
 }
 
 label {
-  font-family: Merriweather;
+  font-family: Lato;
 }
 
 @media only screen and (max-width: 480px) {
