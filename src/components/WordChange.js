@@ -25,7 +25,7 @@ const WordChange = () => {
   ];
   const words = wordsArr.map(newArr =>
     newArr.map((p, key) => (
-      <StyledP id={key} style={{ '--animation-order': key + 1 }}>
+      <StyledP id={key} style={{ '--animation-order': key + 2 }}>
         {p}
       </StyledP>
     ))

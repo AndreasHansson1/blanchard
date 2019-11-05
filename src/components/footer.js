@@ -6,7 +6,7 @@ import styled from '@emotion/styled';
 const Footer = () => {
   const context = useThemeUI();
   const {
-    theme: { breakpoints, colors }
+    theme: { breakpoints, colors, mainPadding }
   } = context;
 
   const StyledFooter = styled.footer`
@@ -19,7 +19,7 @@ const Footer = () => {
     align-items: center;
     margin: 0 auto;
     max-width: 960px;
-    padding: 1rem 1rem;
+    padding: ${mainPadding};
 
     span {
       color: white;

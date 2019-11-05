@@ -12,6 +12,7 @@ export default {
   breakpoints: ['480px', '600px', '960px'],
 
   textPadding: '0.5rem 2.5rem',
+  mainPadding: '1rem',
 
   styles: {
     // the keys used here reference elements in MDX
