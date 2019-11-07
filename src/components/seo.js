@@ -84,6 +84,7 @@ function SEO({ description, image, lang, meta, title }) {
         }
       ].concat(meta)}
     >
+      <link rel='canonical' href='https://blanchard.netlify.com/' />
       <link
         rel='apple-touch-startup-image'
         media='(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)'
