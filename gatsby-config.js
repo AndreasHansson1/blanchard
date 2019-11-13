@@ -1,54 +1,54 @@
 module.exports = {
   siteMetadata: {
-    title: 'Italian alps | Blanchard',
+    title: "Italian alps | Blanchard",
     description:
-      'Champoluc apartment for rent. Lovely 3 bedroom apartment for rent just outside Champoluc, in the village of Blanchard. Close to the Frachey lift station.',
-    author: 'Andreas',
-    siteUrl: 'https://blanchard.netlify.com/',
-    image: '/images/terrace-outside.jpg'
+      "Hyra lägenhet i Chasmpluc. Champoluc apartment for rent. Lovely 3 bedroom apartment for rent just outside Champoluc, in the village of Blanchard.",
+    author: "Andreas",
+    siteUrl: "https://blanchard.netlify.com/",
+    image: "/images/terrace-outside.jpg"
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-emotion',
-    'gatsby-plugin-sitemap',
-    'gatsby-plugin-robots-txt',
-    'gatsby-plugin-netlify',
-    'gatsby-plugin-theme-ui',
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-emotion",
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-robots-txt",
+    "gatsby-plugin-netlify",
+    "gatsby-plugin-theme-ui",
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'images',
+        name: "images",
         path: `${__dirname}/src/images`
       }
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'gallery-items',
+        name: "gallery-items",
         path: `${__dirname}/src/images/gallery-items`
       }
     },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
     {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: "gatsby-plugin-manifest",
       options: {
-        name: 'blanchard',
-        short_name: 'blanchard',
-        start_url: '/',
-        background_color: '#fff',
-        theme_color: '#fff',
-        display: 'standalone',
-        icon: 'src/images/icon.png' // This path is relative to the root of the site.
+        name: "blanchard",
+        short_name: "blanchard",
+        start_url: "/",
+        background_color: "#fff",
+        theme_color: "#fff",
+        display: "standalone",
+        icon: "src/images/icon.png" // This path is relative to the root of the site.
       }
     },
-    'gatsby-transformer-sharp',
+    "gatsby-transformer-sharp",
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
           {
-            resolve: 'gatsby-remark-images',
+            resolve: "gatsby-remark-images",
             options: {
               maxWidth: 750,
               quality: 90,
@@ -59,9 +59,9 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: 'UA-145768757-1'
+        trackingId: "UA-145768757-1"
       }
     },
     {
