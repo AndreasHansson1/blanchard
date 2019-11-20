@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import styled from '@emotion/styled';
-import useInterval from '../hooks/useInterval';
-import { translate } from '../styles/KeyFrames';
+import React, { useState } from "react";
+import styled from "@emotion/styled";
+import useInterval from "../hooks/useInterval";
+import { translate } from "../styles/KeyFrames";
 
 const WordChange = () => {
   const StyledP = styled.p`
@@ -19,13 +19,13 @@ const WordChange = () => {
   `;
 
   const wordsArr = [
-    ['v', 'ä', 'l', 'k', 'o', 'm', 'm', 'e', 'n', '!'],
-    ['w', 'e', 'l', 'c', 'o', 'm', 'e', '!'],
-    ['b', 'e', 'n', 'v', 'e', 'n', 'u', 't', 'o', '!']
+    ["v", "ä", "l", "k", "o", "m", "m", "e", "n", "!"],
+    ["w", "e", "l", "c", "o", "m", "e", "!"],
+    ["b", "e", "n", "v", "e", "n", "u", "t", "o", "!"]
   ];
   const words = wordsArr.map(newArr =>
     newArr.map((p, key) => (
-      <StyledP id={key} style={{ '--animation-order': key + 2 }}>
+      <StyledP id={key} style={{ "--animation-order": key + 1 }}>
         {p}
       </StyledP>
     ))

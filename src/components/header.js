@@ -1,14 +1,14 @@
 /** @jsx jsx */
-import React, { useState } from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
-import { jsx } from '@emotion/core';
-import styled from '@emotion/styled';
-import { useThemeUI } from 'theme-ui';
-import { useScrollPosition } from '../hooks/useScrollPosition';
-import { useWindowSize } from '../hooks/useWindowSize';
-import BackgroundImage from 'gatsby-background-image';
-import Logo from './Logo';
-import WordChange from './WordChange';
+import React, { useState } from "react";
+import { graphql, useStaticQuery } from "gatsby";
+import { jsx } from "@emotion/core";
+import styled from "@emotion/styled";
+import { useThemeUI } from "theme-ui";
+import { useScrollPosition } from "../hooks/useScrollPosition";
+import { useWindowSize } from "../hooks/useWindowSize";
+import BackgroundImage from "gatsby-background-image";
+import Logo from "./Logo";
+import WordChange from "./WordChange";
 
 const Header = () => {
   const [sticky, setSticky] = useState(false);
@@ -68,9 +68,7 @@ const Header = () => {
 
   const DivWords = styled.div`
     padding: 0.5rem 0;
-    text-align: center;
     font-size: 1.7rem;
-    /* transform: rotate(-5deg); */
     @media only screen and (min-width: ${breakpoints[1]}) {
       font-size: 3rem;
     }
@@ -91,7 +89,7 @@ const Header = () => {
   `;
 
   const imageData = [
-    'linear-gradient(rgba(25,25,112, 0.3), rgba(25,25,112, 0.1))',
+    "linear-gradient(rgba(25,25,112, 0.3), rgba(25,25,112, 0.1))",
     data.file.childImageSharp.fluid
   ];
 
@@ -110,8 +108,8 @@ const Header = () => {
     <>
       <BackgroundImage
         fluid={imageData}
-        backgroundColor='transparent'
-        alt='Mountains'
+        backgroundColor="transparent"
+        alt="Mountains"
       >
         <StyledHeader sticky={sticky}>
           <DivTitle>
